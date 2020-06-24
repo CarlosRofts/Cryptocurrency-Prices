@@ -21,10 +21,10 @@ const Formulario = ({guardarCriptomoneda , guardarMoneda}) => {
     ];
 
     // State useMoneda CustomHook
-    const [moneda,SelectMoneda]  = useMoneda('Elije tu Moneda' , '' , MONEDAS );
+    const [moneda,SelectMoneda]  = useMoneda('Elige tu Moneda' , '' , MONEDAS );
 
     // State useCriptomoneda CustomHook
-    const [criptomoneda, SelectCripto] = useCriptomoneda('Elije tu Criptomoneda','',listacripto)
+    const [criptomoneda, SelectCripto] = useCriptomoneda('Elige tu Criptomoneda','',listacripto)
 
     useEffect(() => {
         const consultarAPI = async () => {
